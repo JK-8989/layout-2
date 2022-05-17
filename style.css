@@ -1,30 +1,51 @@
 body {
-  font-family:'Times New Roman', Times, serif;
+  line-height: 1.2;
+  letter-spacing: .5px;
+  word-spacing: 6px;
+}
+p {
+  margin-top: 0;
+  font-family: 'Abril Fatface', cursive;
 }
 .grid-container {
   width: 700px;
-  height: 100vh;
   margin: auto;
   display: grid;
-  grid-template-columns: 1fr .4fr .4fr 1fr;
-  grid-template-rows: .2fr .7fr 1.4fr 1fr 2fr .9fr .7fr .7fr;
-  gap: 10px;
+  grid-template-columns: 1fr 0.4fr 0.4fr 1fr;
+  grid-template-rows: 0.2fr 0.4fr 1.4fr 1fr 2fr 0.9fr 0.7fr 0.7fr;
+  gap: 25px;
 }
-@media screen and (max-width: 700px){
+@media screen and (min-width: 800px) {
+  .grid-container {
+    height: 100vh;
+  }
+}
+@media screen and (max-width: 700px) {
   .grid-container {
     width: 100vw;
+    height: auto;
   }
+  #quotation-L {
+    margin-top: .2em;
+  }
+  /* div> .pseudo-box-1 {
+    width: 26%;
+    height: 47%;
+    margin-top: 79%;
+    background: purple
+  } */
 }
 .contents {
   border: 1px solid black;
-  background: grey;
+  /* background: grey; */
   z-index: 1;
 }
 #heading {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   grid-column: 1 / 5;
-  grid-row: 1 / 2 ;
-}   
+  grid-row: 1 / 2;
+  color: grey;
+}
 .empty-top {
   border: 1px solid black;
   grid-column: 1 / 3;
@@ -44,10 +65,11 @@ body {
 }
 .content-4 {
   background: pink;
-  opacity: .8;
+  opacity: 0.8;
   z-index: 2;
   grid-column: 2 / 4;
   grid-row: 4 / 6;
+  padding: 0 30px;
 }
 .empty-bottom {
   border: 1px solid black;
@@ -58,5 +80,62 @@ body {
   border: 1px solid black;
   grid-column: 1 / 5;
   grid-row: 8 / 9;
-} 
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  margin-bottom: 10px;
+  color: grey;
+}
+.article-left {
+  padding-left: 20px;
+  font-size: .9em;
+}
+.article-left::first-letter {
+  font-size: 10rem;
+  float: left;
+  line-height: .7;
+  padding: 0 0.3rem;
+  margin: 0 0.3rem 0 0;
+  font-family: "Times New Roman", Times, serif;
+}
+.article-right-2::first-letter {
+  font-size: 5rem;
+  float: left;
+  line-height: 0.9;
+  padding: 0 0.3rem;
+  margin: 0 0.3rem 0 0;
+  font-family: "Times New Roman", Times, serif;
+}
+.article-right-1,
+.article-right-2 {
+  padding-right: 25px;
+  font-size: .9em;
+}
+#quotation-L,
+#quotation-R {
+  font-size: 6em;
+  text-align: center;
+  height: .7em;
+}
+#center {
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+}
+#middle {
+  margin: 0;
+}
+.pseudo-box-1 {
+  float: right;
+  width: 26%;
+  height: 46%;
+  margin-top: 50%;
+  background: blue;
+  shape-outside: polygon(0px 169px, 87px 170px, 89px 512px, 0px 512px);
+  shape-margin: 20px;
+}
+/* .pseudo-box-2 {
 
+}
+.pseudo-box-3 {
+
+} */
