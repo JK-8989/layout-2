@@ -1,5 +1,5 @@
 # Magazine-style-layout
 
-This iss an experimental project to create a web design that looks like a magazine article page, which only text contents create a layout design of the page. 
+This is an experimental project to create a web design that we often find on magazine pages - those that only text contents create a layout design of the page. 
 
-![Image sample](https://www.pinterest.ca/jiyoungkim365/layouts/)
+![layout design of ELLE magazine](https://github.com/JK-8989/layout-2/screen-shot.jpg?raw=true)
