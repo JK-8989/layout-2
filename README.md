@@ -5,4 +5,11 @@ This is an experimental project to create a web design that we often find on mag
 ![layout design of ELLE magazine](https://github.com/JK-8989/layout-2/blob/images/screen-shot.png?raw=true)
 
 ## Challenges
-So far the basic layout's been built up by using 'grid' property and a quotation div is centered as I want it to be, BUT since the 'quotation div' is overlapped on top of two columns, texts also overlap. 
+So far the basic layout's been built up by using 'grid' property and a quotation div is centered as I want it to be, BUT since the 'quotation div' is overlapped on top of two columns, texts also overlap - hope they go around the quote.
+
+
+## Solutions
+I'm still working on the layout but haven't got any good ideas yet. Any recommendations are welcome. 
+
+## Thoughts
+Why layout is darn hard ?!!
